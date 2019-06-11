@@ -34,10 +34,6 @@ h3 {
   letter-spacing: 0.1em;
 }
 
-ul  {
-  padding: 0;
-}
-
 /*
 ============================
 Nav Styles
@@ -58,6 +54,10 @@ Nav Styles
   font-family: 'Dancing Script', cursive;
   margin: 20px 0 40px 0;
   letter-spacing: 0.2em;
+}
+
+.main-nav ul {
+  padding: 0;
 }
 
 .main-nav,
@@ -98,6 +98,7 @@ header {
 
 header img {
   margin: 50px 0px 20px 0px;
+  max-width: 100%;
 }
 
 header p {
@@ -124,7 +125,7 @@ Portfolio Section Styles
 
 .img {
   margin: 30px 0 10px 0;
-  max-width: 100%;
+  max-width: 90%;
 }
 
 #portfolio h3 {
@@ -151,6 +152,10 @@ Skills Section Styles
   margin: 0 auto;
 }
 
+#skills ul {
+  padding: 0;
+}
+
 #skills h2 {
   padding-bottom: 20px;
 }
@@ -162,9 +167,8 @@ Skills Section Styles
   text-align: center;
   background: #E6E6FA;
   color: black;
-  padding: 10px 40px;
+  padding: 10px 30px;
   margin: 10px;
-  text-transform: uppercase;
 }
 
 #skills li:nth-child(odd) {
@@ -378,6 +382,7 @@ Media Queries Styles
 
   #skills {
     background-color: white;
+    margin: 0 auto;
   }
 
   #contact {
