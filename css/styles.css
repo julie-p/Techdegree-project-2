@@ -78,19 +78,13 @@ Nav Styles
   background: #fff;
 }
 
-.main-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
   transition: all .5s;
 }
 nav ul li a:hover {
-  color: #9cbfd1;
+  color: #AFEEEE;
 }
 /*
 ============================
@@ -162,17 +156,19 @@ Skills Section Styles
 }
 
 #skills li {
-  border-radius: 8px;
+  border-radius: 50%;
   display: inline-flex;
+  max-width: 50%;
   text-align: center;
   background: #E6E6FA;
   color: black;
-  padding: 5px 10px;
-  margin: 5px;
+  padding: 10px 40px;
+  margin: 10px;
+  text-transform: uppercase;
 }
 
 #skills li:nth-child(odd) {
-  background: #FFE4E1;
+  background: #AFEEEE;
 }
 
 #skills li:hover {
@@ -210,7 +206,8 @@ Footer Styles
 
 footer .footer-name {
   float: left;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Dancing Script', cursive;
+  text-transform: none;
   letter-spacing: 0.1em;
   padding-left: 10px;
 }
@@ -229,7 +226,7 @@ footer a {
 
 footer a:hover {
   transition: all .5s;
-  color: #9cbfd1;
+  color: #AFEEEE;
 }
 
 /*
@@ -249,3 +246,145 @@ ClearFix
 Media Queries Styles
 ============================
 */
+
+@media (min-width: 768px) {
+  .main-nav li {
+      display: inline-block;
+      width: auto;
+      margin-right: 15px;
+      background-color: transparent;
+  }
+
+  .main-nav li:last-child {
+      margin-right: 0;
+  }
+
+  #home {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    padding-top: 20px;
+  }
+
+  header img {
+    margin: auto;
+  }
+
+  header p {
+    max-width: 50%;
+    text-align: left;
+  }
+
+  .marketing,
+  .search,
+  .travel,
+  .map,
+  .gallery,
+  .calculator {
+    display: inline-block;
+    max-width: 33%;
+    vertical-align: top;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .footer-nav {
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    color: #000;
+    text-transform: uppercase;
+    float: right;
+    padding: 0;
+    background: transparent;
+    letter-spacing: 0.3em;
+  }
+
+  .footer-nav ul {
+    display: inline-flex;
+  }
+
+  .footer-nav a {
+    font-weight: bold;
+  }
+
+  footer .footer-name {
+    font-family: 'Dancing Script', cursive;
+    text-transform: none;
+    margin: 10px 0 0 10px;
+    letter-spacing: 0.2em;
+  }
+}
+
+@media (min-width: 1024px){
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav {
+    width: 100%;
+    display: inline-flex;
+    background-color: #E6E6FA;
+  }
+
+  .name {
+    display: inline;
+    text-align: left;
+    font-size: 2em;
+    width: 40%;
+    margin: auto;
+    padding-left: 50px;
+  }
+
+  .main-nav ul {
+    font-size: 0.8em;
+    text-align: right;
+    width: auto;
+    margin: auto;
+  }
+
+  #home {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    background-color: #E6E6FA;
+  }
+
+  header img {
+    margin: 50px 20px 20px 0;
+  }
+
+  header p {
+    margin: 50px;
+    text-align: left;
+    padding: 0;
+  }
+
+  p .text-description {
+    margin: 0 auto;
+  }
+
+  #portfolio {
+    background-color: white;
+    padding: 20px 0 40px 0;
+  }
+
+  .img {
+    max-width: 95%;
+  }
+
+  #skills {
+    background-color: white;
+  }
+
+  #contact {
+    margin: 0 auto;
+  }
+
+  #contact p {
+    max-width: 70%;
+  }
+}
