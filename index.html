@@ -4,68 +4,68 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Lora|Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lora|Playfair+Display&display=swap" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
-        <link href="css/normalize.css" rel="stylesheet">
         <title>Julie's Portfolio</title>
     </head>
 
     <body>
 
-<!-- Fixed Header -->
-        <header class="container" id="top">
-          <div class="name">
-            <h1>Julie Serra</h1>
-          </div>
-          <nav class="main-nav">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
+<!-- Nav -->
+          <section class="nav">
+            <h1 class="name">Julie Serra</h1>
+            <div class="nav-wrapper">
+              <nav class="main-nav" id="top">
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </section>
 
 <!-- Section Home -->
         <main class="main-content">
-          <section id="home">
+
+          <header id="home">
             <img class="profile-img" src="images/responsive-layout-profile.png" alt="Profile Image">
             <p class="txt-description">Hi I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-          </section>
+          </header>
 
 <!-- Section Portfolio -->
           <section id="portfolio">
             <h2>Portfolio</h2>
 
             <div class="container">
-              <div class="img">
-                <img class="marketing" src="images/portfolio-1.png" alt="Image of a Marketing Page">
+              <div class="marketing">
+                <img class="img" src="images/portfolio-1.png" alt="Image of a Marketing Page">
                 <h3>Marketing Page</h3>
                 <p>This Project shows the front page of a marketing website meant for a specific business i am interested in.</p>
               </div>
-              <div class="img">
-                <img class="search" src="images/portfolio-2.png" alt="Image of a Search Page">
+              <div class="search">
+                <img class="img" src="images/portfolio-2.png" alt="Image of a Search Page">
                 <h3>Search Page</h3>
                 <p>This project searches through a specific database to find information that the user is trying to look up.</p>
               </div>
-              <div class="img">
-                <img class="travel" src="images/portfolio-3.png" alt="Image of a Travel Application">
+              <div class="travel">
+                <img class="img" src="images/portfolio-3.png" alt="Image of a Travel Application">
                 <h3>Travel App</h3>
                 <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
               </div>
-              <div class="img">
-                <img class="map" src="images/portfolio-4.png" alt="Image of a Map Application">
+              <div class="map">
+                <img class="img" src="images/portfolio-4.png" alt="Image of a Map Application">
                 <h3>Map of Favorite Spots</h3>
                 <p>This project uses mapping apis to plot points for my favourite spots in the city for a do-it-yourself walking tour.</p>
               </div>
-              <div class="img">
-                <img class="gallery" src="images/portfolio-5.png" alt="Image of a Photo Gallery App">
+              <div class="gallery">
+                <img class="img" src="images/portfolio-5.png" alt="Image of a Photo Gallery App">
                 <h3>Photo Gallery</h3>
                 <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
               </div>
-              <div class="img">
-                <img class="calculator" src="images/portfolio-6.png" alt="Image of a Calculator App">
+              <div class="calculator">
+                <img class="img" src="images/portfolio-6.png" alt="Image of a Calculator App">
                 <h3>Calculator</h3>
                 <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
               </div>
@@ -73,9 +73,10 @@
           </section>
 
 <!-- Section Skills -->
+
           <section id="skills">
             <h2>Skills</h2>
-            <ul class="container">
+            <ul>
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
@@ -88,19 +89,18 @@
           <section id="contact">
             <h2>Contact</h2>
             <p>If you're interested in chatting or want more information about what i've been working on, i'd love to hear from you!</p>
+            <br>
             <p>Phone: <strong>+1 (111) 555-1234</strong></p>
             <p>Email: <strong>email@yoursite.com</strong></p>
           </section>
 
         </main>
 <!-- Footer -->
-
-      <footer>
-        <div class="name">
-          <h2>Julie Serra</h2>
+      <hr>
+      <footer class="second-header">
+          <h2 class="footer-name">Julie Serra</h2>
           <h2 class="top"><a href="#top">Back to Top</a></h2>
-        </div>
-        <nav class="footer-nav">
+        <nav class="footer-nav clearfix">
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#portfolio">Portfolio</a></li>

@@ -13,6 +13,7 @@ Main Content Styles
 body {
   margin: 0 auto;
   max-width: 1024px;
+  font-family: 'Lora', serif;
 }
 
 li {
@@ -23,17 +24,94 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+h3 {
+  letter-spacing: 0.1em;
+}
+
+ul  {
+  padding: 0;
+}
+
 /*
 ============================
-Header Styles
+Nav Styles
 ============================
 */
+.nav {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  padding: 25px;
+  background-color: #E6E6FA;
+  border-radius: 6px;
+}
 
+.name {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  margin: 20px 0 40px 0;
+  letter-spacing: 0.2em;
+}
+
+.main-nav,
+.main-nav li {
+  width: 100%;
+}
+
+.main-nav a {
+  color: #000;
+  text-transform: uppercase;
+  display: block;
+  line-height: 1.6em;
+}
+
+.main-nav li {
+  padding: 10px 0 10px;
+  margin: 5px auto;
+  background: #fff;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #9cbfd1;
+}
 /*
 ============================
 Home Section Styles
 ============================
 */
+header {
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+header img {
+  margin: 50px 0px 20px 0px;
+}
+
+header p {
+  color: black;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+  padding: 0px 30px 40px 30px;
+}
 
 /*
 ============================
@@ -41,11 +119,66 @@ Portfolio Section Styles
 ============================
 */
 
+#portfolio {
+  max-width: 100%;
+  text-align: center;
+}
+
+#portfolio h2 {
+  padding: 20px 0 20px 0;
+}
+
+.img {
+  margin: 30px 0 10px 0;
+  max-width: 100%;
+}
+
+#portfolio h3 {
+  text-transform: uppercase;
+}
+
+#portfolio p {
+  line-height: 1.5em;
+  padding: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 /*
 ============================
 Skills Section Styles
 ============================
 */
+#skills {
+  border-radius: 6px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#skills h2 {
+  padding-bottom: 20px;
+}
+
+#skills li {
+  border-radius: 8px;
+  display: inline-flex;
+  text-align: center;
+  background: #E6E6FA;
+  color: black;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+#skills li:nth-child(odd) {
+  background: #FFE4E1;
+}
+
+#skills li:hover {
+  transform: scale(1.2);
+  transition: all ease 1.5s;
+}
 
 /*
 ============================
@@ -53,11 +186,63 @@ Contact Styles
 ============================
 */
 
+#contact {
+  background-color: #E6E6FA;
+  padding: 50px 0 50px 0;
+  text-align: center;
+}
+
+#contact p {
+  width: 90%;
+  margin: 0 auto;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+}
 /*
 ============================
 Footer Styles
 ============================
 */
+
+.footer-nav  {
+  display: none;
+}
+
+footer .footer-name {
+  float: left;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.1em;
+  padding-left: 10px;
+}
+
+footer .top {
+  float: right;
+  letter-spacing: 0.1em;
+}
+
+footer a {
+  color: black;
+  padding-right: 10px;
+  font-size: 0.7em;
+  font-family: 'Playfair Display', serif;
+}
+
+footer a:hover {
+  transition: all .5s;
+  color: #9cbfd1;
+}
+
+/*
+================================
+ClearFix
+================================
+*/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 /*
 ============================
