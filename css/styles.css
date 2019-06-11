@@ -331,7 +331,7 @@ Media Queries Styles
 @media (min-width: 1024px){
 
   .container {
-    display: flex;
+    display: -ms-flex;
     flex-wrap: wrap;
     justify-content: center;
   }
